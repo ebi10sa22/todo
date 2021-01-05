@@ -1,0 +1,98 @@
+.list {
+  display: flex;
+  margin-top: 10px;
+  width: 95%;
+  height: 12vh;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+.list > .list__contents {
+  display: flex;
+  flex-direction: column;
+  transition: .3s ease-in;
+  width: 90%;
+  height: 100%;
+  background-color:whitesmoke;
+  overflow: hidden;
+}
+.list > .list__contents:hover {
+  background-color: lightgray;
+}
+.list > div > .list__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.list > div > .list__top > p:nth-child(1) {
+  font-size: 28px;
+  margin: 10px 20px;
+}
+.list > div > .list__top > p:nth-child(2) {
+  font-size: 18px;
+  margin: 10px 20px;
+} 
+.list > div > .list__middle {
+  font-size: 14px;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.list > div > .list__bottom {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.list > div >.list__bottom > p {
+  text-indent: 20px;
+  width: 95%;
+}
+.list > .list__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+.list > .list__icon > p {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.list > .list__icon > p:nth-child(2){
+  margin-bottom: 20px;
+}
+.list >div> .list__bottom > .list__finished{
+  display: flex;
+  flex-direction: column;
+  margin-top:15px;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+.list >div> .list__bottom > .list__finished >p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.list >div> .list__bottom > .list__finished > div >.MuiButton-root{
+  margin-left: 20px;
+}
+
+
+
+
+@media (max-width : 10000px) {
+  .list > div > .list__top > p:nth-child(1) {
+    font-size: 24px;
+  }
+  .list > div > .list__top > p:nth-child(2) {
+    font-size: 14px;
+  }
+}

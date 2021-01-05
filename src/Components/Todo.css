@@ -1,0 +1,24 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 90vh;
+  background: #e7e5e4;
+  border-radius: 1%;
+  box-shadow: 0.3px 0.3px 15px #cccbca, -0.3px -0.3px 15px #fffffe;
+}
+
+@media only screen and (max-width : 720px) {
+  .todo{
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  .todo{
+    width: 100%;
+    height: 100vh;
+  }
+}

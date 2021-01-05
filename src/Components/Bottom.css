@@ -1,0 +1,34 @@
+.bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+  background: #E7E5E4;
+border-radius: 1%;
+box-shadow: inset 0.3px 0.3px 10px #BBB9B9, inset -0.3px -0.3px 10px #FFFFFF;
+}
+.bottom__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  font-size:  3vh;
+  margin-left: 5%;
+}
+
+.bottom__inner  > p:nth-child(2){
+  width: fit-content;
+  height: fit-content;
+}
+@media only screen and (max-width : 720px) {
+  .bottom__inner{
+    font-size: 3vh;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  .bottom__inner{
+    font-size: 3vh;
+  }
+}

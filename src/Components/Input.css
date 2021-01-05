@@ -1,0 +1,138 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 95%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.input > .input__container {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.input > .input__container > .input__bar:not(:focus) {
+  width: 80%;
+  height: 10vh;
+  margin-right: 20px;
+  background: #e7e5e4;
+  border-radius: 1%;
+  box-shadow: inset 3.3px 3.3px 13px #d2d0cf, inset -3.3px -3.3px 13px #fcfaf9;
+}
+.input > .input__container > .input__bar > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none;
+  height: 100%;
+  text-indent: 40px;
+  cursor: text;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+}
+.input > .input__container > .input__bar:not(:focus):active {
+  box-shadow: none;
+}
+.input > .input__container > .input__button:not(:focus) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 10vh;
+  transition: 0.1s ease-in;
+  background: #e7e5e4;
+  border-radius: 1%;
+  box-shadow: 3.3px 3.3px 13px #d2d0cf, -3.3px -3.3px 13px #fcfaf9;
+}
+.input > .input__container > .input__button:not(:focus):active {
+  box-shadow: none;
+}
+.input__button:focus {
+  box-shadow: none;
+}
+.input > .input__container > .input__button > p {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+  color: grey;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.input > .input__details {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input >  .input__details > input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  outline-width: 0px;
+  font-size: 28px;
+  text-indent: 2vh;
+  border: none;
+  background: #e7e5e4;
+  border-radius: 1%;
+  box-shadow: inset 3.3px 3.3px 13px #d2d0cf, inset -3.3px -3.3px 13px #fcfaf9;
+}
+
+
+@media only screen and (max-width : 768px) {
+  .input > .input__container > .input__button > p  {
+    font-size: 28px;
+  }
+  .input > .input__container > .input__bar > div > p {
+    font-size: 28px;
+  }
+  .input > .input__container > .input__bar:not(:focus){
+    width: 70%;
+  }
+  .input > .input__container > .input__button:not(:focus) {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  .input > .input__container > .input__button > p  {
+    font-size: 24px;
+  }
+  .input > .input__container > .input__bar > div > p {
+    font-size: 24px;
+  }
+  .input > .input__container > .input__bar:not(:focus){
+    width: 70%;
+  }
+  .input > .input__container > .input__button:not(:focus) {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width : 300px) {
+  .input > .input__container > .input__button > p  {
+    font-size: 18px;
+    text-align: center;
+  }
+  .input > .input__container > .input__bar > div > p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .input > .input__container > .input__bar:not(:focus){
+    width: 70%;
+    text-align: center;
+  }
+  .input > .input__container > .input__button:not(:focus) {
+    width: 30%;
+    text-align: center;
+  }
+}
