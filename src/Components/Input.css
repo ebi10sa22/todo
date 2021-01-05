@@ -25,6 +25,7 @@
 .input > .input__container > .input__bar > div {
   display: flex;
   align-items: center;
+  color: rgb(128 128 128);
   width: 100%;
   border: none;
   height: 100%;
