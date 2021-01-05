@@ -18,7 +18,6 @@ function Bottom() {
   return (
     <div className="bottom" style={{ background: theme && "lightgray" }}>
       <div className="bottom__inner">
-        <p>Login</p>
         <a href="https://github.com/ebi10sa22">Github</a>
         <Tooltip title={theme ? "Light mode" : "Dark mode"} placement="top">
         <p onClick={() => setDarkMode(!darkmode)}>
